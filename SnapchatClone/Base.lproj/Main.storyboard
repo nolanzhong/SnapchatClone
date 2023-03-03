@@ -93,11 +93,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kAB-gt-h2N">
-                                <rect key="frame" x="39" y="83" width="315" height="535"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selectImageIcon" translatesAutoresizingMaskIntoConstraints="NO" id="kAB-gt-h2N">
+                                <rect key="frame" x="39" y="83" width="315" height="500"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mo4-cK-VPU">
-                                <rect key="frame" x="157" y="674" width="79" height="35"/>
+                                <rect key="frame" x="157" y="639" width="79" height="70"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Upload"/>
                                 <connections>
@@ -147,6 +147,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="s.circle.fill" catalog="system" id="1zn-TS-Bdn"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toSignInVC" modalPresentationStyle="fullScreen" id="iMd-UF-9GX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1CE-Pb-1vD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -219,7 +222,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="oNq-cr-Q4n">
             <objects>
-                <tabBarController id="yDT-A0-3WG" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBar" id="yDT-A0-3WG" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OAs-29-RLy">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -239,6 +242,7 @@
     <resources>
         <image name="f.circle.fill" catalog="system" width="128" height="123"/>
         <image name="s.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="selectImageIcon" width="350" height="500"/>
         <image name="u.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

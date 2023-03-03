@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class SettingsViewController: UIViewController {
 
@@ -16,6 +17,14 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func logoutClicked(_ sender: Any) {
+        do {
+            try Auth.auth().signOut()
+            self.performSegue(withIdentifier: "toSignInVC", sender: nil)
+            
+        } catch {
+            
+        }
+        
     }
     
     /*
