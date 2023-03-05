@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7E2026F329B19C0100E8AC2A /* SnapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2026F229B19C0100E8AC2A /* SnapVC.swift */; };
 		7E2026F829B1A33200E8AC2A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E2026F729B1A33200E8AC2A /* GoogleService-Info.plist */; };
+		7E768A4A29B42F9E002FE97B /* UserSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E768A4929B42F9E002FE97B /* UserSingleton.swift */; };
 		7EC4059D29A96584009A48E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC4059C29A96584009A48E6 /* AppDelegate.swift */; };
 		7EC4059F29A96584009A48E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC4059E29A96584009A48E6 /* SceneDelegate.swift */; };
 		7EC405A129A96584009A48E6 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC405A029A96584009A48E6 /* SignInVC.swift */; };
@@ -26,6 +27,7 @@
 		09F3945687881A2D1BB7472C /* Pods_SnapchatClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapchatClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E2026F229B19C0100E8AC2A /* SnapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapVC.swift; sourceTree = "<group>"; };
 		7E2026F729B1A33200E8AC2A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/SnapChatPlist/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7E768A4929B42F9E002FE97B /* UserSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSingleton.swift; sourceTree = "<group>"; };
 		7EC4059929A96584009A48E6 /* SnapchatClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapchatClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EC4059C29A96584009A48E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EC4059E29A96584009A48E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		7E768A4829B42F1D002FE97B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7E768A4929B42F9E002FE97B /* UserSingleton.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		7EC4059029A96584009A48E6 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +94,7 @@
 		7EC4059B29A96584009A48E6 /* SnapchatClone */ = {
 			isa = PBXGroup;
 			children = (
+				7E768A4829B42F1D002FE97B /* Model */,
 				7EC405BC29A97D13009A48E6 /* Delegates */,
 				7EC405BB29A97CE0009A48E6 /* ViewControllers */,
 				7EC405A229A96584009A48E6 /* Main.storyboard */,
@@ -243,6 +254,7 @@
 			files = (
 				7EC405A129A96584009A48E6 /* SignInVC.swift in Sources */,
 				7EC405B829A97CBD009A48E6 /* UploadVC.swift in Sources */,
+				7E768A4A29B42F9E002FE97B /* UserSingleton.swift in Sources */,
 				7E2026F329B19C0100E8AC2A /* SnapVC.swift in Sources */,
 				7EC405A729A96584009A48E6 /* SnapchatClone.xcdatamodeld in Sources */,
 				7EC405B629A97CAA009A48E6 /* FeedVC.swift in Sources */,
